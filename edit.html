@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>We are Groots - Inventory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="moss-verification-code" content="057019abb25c78dddcde5a948b3d53a492aa24ae1ca6f4269b41b481b5fcbb9e">
+    <meta name="copyright" content="Monash University">
+    <!-- MDL library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_purple.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- extra styling for MDL header row not to have menu on left -->
+    <style>
+        .mdl-layout__header-row {
+            padding: 0 16px 0 16px;
+        }
+        a {
+            cursor: pointer;
+        }
+        label {
+            margin-left: 50px;
+        }
+        h3 {
+            margin-left: 50px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">We are Groots - Inventory</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">Back</a>
+                </nav>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- placeholder for edit page content -->
+            </div>
+        </main>
+    </div>
+     
+    <!--Task 5.1 starts here-->
+    <div>
+     <br><br><br>
+        <h3>Edit clothing item properties</h3>
+        <label>Name:</label>
+        <input type= "text" id="editItemName">
+        <br>
+        <br>
+        <label>Stock: </label>
+        <input type= "number" id="editItemStock">
+        <br>
+        <br>
+        <label>Price: </label>
+        <input type= "number" id="editItemPrice">
+        <br>
+        <br>
+
+        <!-- Colored raised button -->
+        <button style = "margin-left: 95px;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick = "submitEdit()">
+            Submit
+        </button>
+        <button style = "margin-left: 30px;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick = "cancelEdit()">
+            Cancel
+        </button>
+    </div>
+    
+    <script src="js/shared.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+</html>
